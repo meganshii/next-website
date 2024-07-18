@@ -1,0 +1,52 @@
+
+.logocontainer {
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(90% - 4rem); /* Adjust based on the space occupied by the heading */
+  }
+  
+  .logoscroll {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .logo {
+    height: 40px; /* Adjust the size as needed */
+    margin: 0 10px;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  
+  .logocontainer2 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(90% - 7rem); /* Adjust based on the space occupied by the heading */
+  }
+  
+  .logoscroll2 {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .logo2 {
+    height: 20px;
+    width: 20px; /* Adjust the size as needed */
+    margin: 0 10px;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }

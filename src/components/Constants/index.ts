@@ -20,6 +20,36 @@ import { FaLeaf, FaProjectDiagram, FaLightbulb, FaRecycle } from 'react-icons/fa
     paperStrawMachine,
     BookServiceImage,
   } from "../../../public/assets";
+
+  import team from "../../../public/assets/team.jpg"
+  import  strength  from '../../../public/assets/strength.jpeg';
+  import machine from "../../../public/assets/machineimg.jpg"
+
+  //brandlogoicons
+
+  import autonics from "../../../public/assets/Logo_icons/autonics.png";
+  import dominos from "../../../public/assets/Logo_icons/dominos.png";
+  import innovance from "../../../public/assets/Logo_icons/innovance.jpg";
+  import kfc from "../../../public/assets/Logo_icons/kfc.png";
+  import mcdonald from "../../../public/assets/Logo_icons/mcdonald.png";
+  import omron from "../../../public/assets/Logo_icons/omron.png";
+  import siemen from "../../../public/assets/Logo_icons/siemens.jpeg";
+  import smc from "../../../public/assets/Logo_icons/smc.png";
+  import starbucks from "../../../public/assets/Logo_icons/starbucks.png";
+  import tessa from "../../../public/assets/Logo_icons/tessa.jpg";
+  import wendys from "../../../public/assets/Logo_icons/wendys.jpeg";
+
+
+  import img1 from "../../../public/assets/bg-2.jpg";
+import img2 from "../../../public/assets/bg3.jpg";
+import img3 from "../../../public/assets/bg-4.webp";
+import img4 from "../../../public/assets/image.png";
+import img5 from "../../../public/assets/Disposable-Spoons-1.jpeg";
+import img6 from "../../../public/assets/bg-5.jpg"
+import bgimg1 from "../../../public/assets/outlin.png"
+import bgimg2 from "../../../public/assets/outlinebowl.jpg"
+import bgimg3 from "../../../public/assets/outlinespoon.png"
+
   import { StaticImageData } from 'next/image';
 interface Images {
   paperBowlMachineImage: StaticImageData;
@@ -359,3 +389,101 @@ paperStrawMachine:paperStrawMachine,
     { title: "Additional Item 5", image: BookServiceImage },
   ];
   
+  
+
+
+  export const data = {
+  heading: "Leading the Way in Food Packaging Machine Manufacturing",
+  description: `At Nessco India, we specialize in manufacturing advanced food packaging machines that set industry standards for quality and innovation. Our state-of-the-art technology ensures efficient and sustainable solutions, meeting the diverse needs of our global clientele. With over 40 years of expertise, we are dedicated to pioneering eco-friendly practices in packaging. Trust us to lead the way in transforming packaging solutions for a greener future.`,
+  stats: {
+    machinesSold: "30000+",
+    readyStockMachines: "3000+"
+  },
+  cards: [
+    {
+      title: "Vision & Mission",
+      image: machine.src,
+            link: "#",
+    },
+    {
+      title: "Our Strength",
+      image: team.src,    
+        link: "#",
+    },
+    {
+      title: "People & Culture",
+      image: strength.src,
+      link: "#",
+    },
+  ],
+};
+
+//logobrands
+
+import { Logo } from '../TrustedPartners/types';
+
+
+export const brandLogos: Logo[] = [
+  { src: mcdonald.src, alt: 'McDonald\'s' },
+  { src: starbucks.src, alt: 'Starbucks' },
+  { src: kfc.src, alt: 'KFC' },
+  { src: mcdonald.src, alt: 'McDonald\'s' },
+  { src: starbucks.src, alt: 'Starbucks' },
+  { src: kfc.src, alt: 'KFC' },
+  { src: mcdonald.src, alt: 'McDonald\'s' },
+  { src: starbucks.src, alt: 'Starbucks' },
+  { src: kfc.src, alt: 'KFC' },
+  { src: mcdonald.src, alt: 'McDonald\'s' },
+  { src: starbucks.src, alt: 'Starbucks' },
+  { src: kfc.src, alt: 'KFC' }
+];
+
+export const partnerLogos: Logo[] = [
+  { src: tessa.src, alt: 'Tessa' },
+  { src: smc.src, alt: 'SMC' },
+  { src: siemen.src, alt: 'Siemens' },
+  { src: omron.src, alt: 'Omron' },
+  { src: innovance.src, alt: 'Innovance' },
+  { src: tessa.src, alt: 'Tessa' },
+  { src: smc.src, alt: 'SMC' },
+  { src: siemen.src, alt: 'Siemens' },
+  { src: omron.src, alt: 'Omron' },
+  { src: innovance.src, alt: 'Innovance' },
+  { src: tessa.src, alt: 'Tessa' },
+  { src: smc.src, alt: 'SMC' },
+  { src: siemen.src, alt: 'Siemens' },
+  { src: omron.src, alt: 'Omron' },
+  { src: innovance.src, alt: 'Innovance' }
+];
+
+
+
+export const item = [
+  { src: img1, alt: "Cups", name: "Paper Bowl",
+     description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry",bgpic:bgimg1 },
+  { src: img2, alt: "Item 2", name: "Paper Cups", description: "Set up your paper cup plant with our high-speed machines for efficient, eco-friendly production. Enjoy rapid manufacturing with reduced energy consumption and operational costs. ",bgpic:bgimg2 },
+  { src: img3, alt: "Item 3", name: "Paper Bag", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry" ,bgpic:bgimg3},
+  { src: img2, alt: "Item 2", name: "Paper Cups", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for be",bgpic:bgimg2},
+  { src: img1, alt: "Cups", name: "Paper Bowl", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry" ,bgpic:bgimg1},
+  { src: img5, alt: "Item 5", name: "Paper Spoon", description:"Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry",bgpic:bgimg1 },
+  { src: img6, alt: "Item 6", name: "Paper Glass", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage" ,bgpic:bgimg1},
+  { src: img4, alt: "Item 4", name: "Paper Bucket", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for be" ,bgpic:bgimg3},
+  { src: img1, alt: "Cups", name: "Paper Bag", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry",bgpic:bgimg2},
+  { src: img3, alt: "Item 3", name: "Paper Bowl", description: "Description for Paper bag Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to p" ,bgpic:bgimg2},
+  { src: img5, alt: "Item 5", name: "Paper Bag", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry",bgpic:bgimg2},
+  { src: img4, alt: "Item 4", name: "Paper Spoon", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for beper bag" ,bgpic:bgimg2},
+  { src: img3, alt: "Item 3", name: "Paper Bag", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage" ,bgpic:bgimg3},
+  { src: img2, alt: "Item 2", name: "Paper Cup", description:"Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry",bgpic:bgimg2 },
+  { src: img1, alt: "Cups", name: "Paper Bowl", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage" ,bgpic:bgimg3},
+  { src: img2, alt: "Item 2", name: "Paper Cup", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry"},
+  { src: img3, alt: "Item 3", name: "Paper Plate", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage" ,bgpic:bgimg3},
+  { src: img1, alt: "Cups", name: "Paper Bag", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage" },
+  { src: img3, alt: "Item 3", name: "Paper Cup", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage" },
+  { src: img4, alt: "Item 4", name: "Paper Spoon", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry",bgpic:bgimg3 },
+  { src: img1, alt: "Cups", name: "Paper Bag", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage" ,bgpic:bgimg3},
+  { src: img2, alt: "Item 2", name: "Paper Glass", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.",bgpic:bgimg3},
+  { src: img3, alt: "Item 3", name: "Paper Bag", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage",bgpic:bgimg3},
+  { src: img4, alt: "Item 4", name: "Paper Spoon", description: "Ppaer cups are disposable containers made from the paper and often lined with pplatic or wax to prevent liuquid leakage.theu are widely used for bevrages and food indeustry",bgpic:bgimg3 },
+
+];
+
