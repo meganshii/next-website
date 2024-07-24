@@ -1,10 +1,25 @@
+"use client";
+
+import React, { useState } from 'react';
 import Image from 'next/image'
 import machine from '../../../public/assets/banner.jpg'
 import team from '../../../public/assets/banner2.png'
 import banner from '../../../public/assets/banner3.jpg'
+import Card from './Card'
 import { GrAddCircle } from "react-icons/gr";
 
-const NewsFeature = () => {
+
+const NewsFeature:React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="p-6">
       <div className="text-center mt-10">
@@ -20,7 +35,7 @@ const NewsFeature = () => {
               alt="Revolutionary Speed Unveiled"
               className="w-full h-[155%] rounded-3xl"
             />
-            <div className="absolute  top-0 right-0 m-2">
+            <div className="absolute  top-0 right-0 m-2" onClick={handleOpenModal}>
               <GrAddCircle size={30} className="text-white" />
             </div>
             <div className="absolute -bottom-[55%] left-0 w-full h-52 group-hover:h-60 bg-gradient-to-t from-black opacity-85 group-hover:opacity-90 transition-opacity duration-300 rounded-b-3xl"></div>
@@ -36,7 +51,7 @@ const NewsFeature = () => {
                   alt="Excellence Showcased at DRUPA"
                   className="w-[120%] h-[125%] rounded-3xl"
                 />
-                <div className="absolute top-0 right-0 m-2">
+                <div className="absolute top-0 right-0 m-2" onClick={handleOpenModal}>
                   <GrAddCircle className="text-white text-3xl" />
                 </div>
                 <div className="absolute -bottom-[25%] left-0 w-full h-52 bg-gradient-to-t from-black opacity-75 transition-opacity duration-300 rounded-b-3xl"></div>
@@ -50,7 +65,7 @@ const NewsFeature = () => {
                   alt="Excellence Showcased at FOOMA"
                   className="w-[120%] h-[125%] rounded-3xl"
                 />
-                <div className="absolute top-0 right-0 m-2">
+                <div className="absolute top-0 right-0 m-2" onClick={handleOpenModal}>
                   <GrAddCircle className="text-white text-3xl" />
                 </div>
                 <div className="absolute -bottom-[25%] left-0 w-full h-52 bg-gradient-to-t from-black opacity-75 transition-opacity duration-300 rounded-b-3xl"></div>
@@ -73,8 +88,14 @@ const NewsFeature = () => {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+             <Card handleCloseModal={handleCloseModal} />
+        </div>
+      )}
     </div>
   )
 }
 
-export default NewsFeature
+
+export default NewsFeature;

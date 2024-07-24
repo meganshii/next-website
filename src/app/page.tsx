@@ -1,4 +1,6 @@
 
+"use client" ;
+
 import Hero from "@/components/Home/Hero";
 import AboutUS from "@/components/Aboutus/AboutUS";
 import { data } from "@/components/Constants";
@@ -6,6 +8,8 @@ import TrustedPartners from "@/components/TrustedPartners/TrustedPartners";
 import Knowmore from "@/components/KnowMore/Knowmore";
 import NewsFeature from "@/components/newsfeature/NewsFeature";
 import Knowmachine from "@/components/Knowmachine/Knowmachine";
+import Card from "@/components/newsfeature/Card";
+
 export default function Home() {
 
   return (
@@ -20,8 +24,8 @@ export default function Home() {
        <TrustedPartners/> */}
       {/* <Knowmore/> */}
 
-      {/* <NewsFeature/> */}
-<Knowmachine/>
+      <NewsFeature/>
+     <Knowmachine/>
       
     </main>
   );
