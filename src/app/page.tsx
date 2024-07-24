@@ -4,6 +4,8 @@ import AboutUS from "@/components/Aboutus/AboutUS";
 import { data } from "@/components/Constants";
 import TrustedPartners from "@/components/TrustedPartners/TrustedPartners";
 import Knowmore from "@/components/KnowMore/Knowmore";
+import NewsFeature from "@/components/newsfeature/NewsFeature";
+import Knowmachine from "@/components/Knowmachine/Knowmachine";
 export default function Home() {
 
   return (
@@ -15,8 +17,11 @@ export default function Home() {
         stats={data.stats}
         cards={data.cards}
       /> 
-       <TrustedPartners/>
-      <Knowmore/> */}
+       <TrustedPartners/> */}
+      {/* <Knowmore/> */}
+
+      {/* <NewsFeature/> */}
+<Knowmachine/>
       
     </main>
   );
